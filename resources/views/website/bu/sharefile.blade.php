@@ -39,7 +39,8 @@
             <hr>
             <div class="pricetext pull-left ">{{ $b->bu_price }}</div></div>
         <div class="pull-right  pp">
-            @if($b->bu_status == 0)
+
+            @if($b->bu_status == 0 && $b->user_id == "")
                 <a class="btn btn-warning btm-sm pull-right pw"  href="{{ url('/user/edit/building/'.$b->id) }}">Building Editing</a>
                 <span class="btn btn-danger btm-sm pw" role="button">Waiting for Activation
                     <span  style="color: #fff;"></span></span></div>
@@ -49,6 +50,7 @@
              <a href="{{ url('/SingleBuilding/'.$b->id) }}" class="btn btn-primary btm-sm" role="button">More Details
                  <span class="fa fa-arrow-circle-o-right" style="color: #fff;"></span></a></div>
             @endif
+
         <div class="clearfix"></div>
       </div>
     </div>

@@ -29,7 +29,8 @@
 
                     <div class="profile-content">
                         {!!  Form::open(['url'=>'/user/create/building','method'=>'post','files' => true])!!}
-                        @include('admin.bu.form',['user' => 1])
+                        @include('admin.bu.form')
+                     <!--   @include('admin.bu.form',['user' => 1]) -->
                         {!! Form::close() !!}
 
                     </div>

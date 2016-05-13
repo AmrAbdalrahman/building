@@ -60,7 +60,8 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse navbar-right " id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav">
-                      <li class="{{ setActive(['home'],'current') }}"><a class="co" href="{{url('/home')}}">Home</a></li>
+                      <li class="{{ setActive(['home'],'current') }}"><a class="co" href={{url('/')}}>Home</a></li>
+                <!--      <li class="{{ setActive(['home'],'current') }}"><a class="co" href="{{url('/home')}}">Home</a></li> -->
                       <li role="separator" class="divider"></li>
 
                       <li class="{{ setActive(['ShowAllBuilding'],'current') }}"><a class="cf"  href="{{url('/ShowAllBuilding')}}">All Building</a></li>

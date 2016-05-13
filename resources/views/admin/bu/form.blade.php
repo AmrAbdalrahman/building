@@ -124,7 +124,7 @@
                         </div>
                         <div class="clearfix"></div>
 
-                        @if(!isset($user))
+                        @if(isset($user))
                          <div class="{{ $errors->has('bu_status') ? ' has-error' : '' }}">
                            
                             <label class="col-md-3">

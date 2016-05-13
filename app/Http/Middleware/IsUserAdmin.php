@@ -19,7 +19,7 @@ class IsUserAdmin
         if(auth()->user()->admin != 1){
             return redirect('login');
         }else{
-           return $next($request); 
+           return $next($request);
         }
         
     }

@@ -3,7 +3,7 @@
 /*
  * admin root
  */
-Route::group(['middleware' => ['web','adminAuth']], function (){
+Route::group(['middleware' => ['web','admin']], function (){
     
     #datatable Ajax
     

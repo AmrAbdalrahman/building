@@ -29,8 +29,7 @@ class BuController extends Controller
     
     public function store(Requests\BuRequest $burequest,Bu $bu){
 
-        
-         if($burequest->file('image')){
+        if($burequest->file('image')){
           $filename = uploadImages($burequest->file('image'));
          if(!$filename){
             return redirect()->back()->with('flash_message','please choose another image less than 500*362');
